@@ -52,7 +52,7 @@ npm install
 ### Run the Server
 
 ```bash
-npm run dev
+npm nodemon index.js
 ```
 
 The server will be running on:
