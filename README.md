@@ -7,7 +7,6 @@ This project provides a foundational understanding of GraphQL by building a basi
 ## 🧰 Tech Stack
 
 - **Node.js**
-- **Express.js**
 - **GraphQL**
 - **GraphQL Tools**
 - **Apollo Server (or express-graphql)**
@@ -18,8 +17,8 @@ This project provides a foundational understanding of GraphQL by building a basi
 ```
 .
 ├── index.js               # Entry point of the GraphQL server
-├── schema/schema.js       # GraphQL schema and resolvers
-├── data/                  # Mock data (books, authors)
+├── schema.js       # GraphQL schema and resolvers
+├── _db.js                 # Mock data (books, authors)
 ├── package.json
 └── README.md
 ```
@@ -59,7 +58,7 @@ npm run dev
 The server will be running on:
 
 ```
-http://localhost:4000/graphql
+http://localhost:4000
 ```
 
 Use the GraphQL playground or any GraphQL client to send queries and mutations.
@@ -74,29 +73,7 @@ Use the GraphQL playground or any GraphQL client to send queries and mutations.
 
 ## ✅ Example Queries
 
-```graphql
-# Fetch all books
-{
-  books {
-    name
-    genre
-    author {
-      name
-    }
-  }
-}
 
-# Fetch a single author
-{
-  author(id: "2") {
-    name
-    age
-    books {
-      name
-    }
-  }
-}
-```
 
 ## 🧠 Credits
 
